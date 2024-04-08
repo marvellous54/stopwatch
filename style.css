@@ -1,0 +1,84 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+body {
+	max-width: 100%;
+    height: 100vh;
+    font-family: calibri;
+    background-image: url("img/stopwatch-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	overflow-x: hidden;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 15px;
+
+}
+
+.container .timer-controls-container > button {
+    border: none;
+    border-radius: 3px;
+    height: 35px;
+    width: 35px;
+    color: white;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.timer {
+    font-size: 50px;
+}
+
+.play-pause-btn {
+    background-color: orange;
+}
+
+.play-pause-btn.play {
+    background: green;
+}
+
+.play-pause-btn .play-icon{
+    display: none;
+}
+
+.play-pause-btn.play .play-icon{
+    display: block;
+}
+
+.play-pause-btn.play .pause-icon {
+    display: none;
+}
+
+.reset-btn {
+    background-color: red;
+}
+
+.timer-control-icon {
+    font-size: 20px;
+}

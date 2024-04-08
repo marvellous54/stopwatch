@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6d56b88f24.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>StopWatch</title>
+</head>
+<body>
+    
+    <div class="container">
+        <p id="timer-el" class="timer">00:00:00</p>
+        <div id="timer-controls-container-el" class="timer-controls-container">
+            <button class="timer-control-btn play-pause-btn play">
+                <i id="play" class="fa-solid fa-play play-icon play-pause-icon timer-control-icon"></i>
+                <i id="pause" class="fa-solid fa-pause pause-icon play-pause-icon timer-control-icon"></i>
+            </button>
+            <button class="timer-control-btn reset-btn">
+                <i id="reset" class="fa-solid fa-rotate-left reset-icon timer-control-icon"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
